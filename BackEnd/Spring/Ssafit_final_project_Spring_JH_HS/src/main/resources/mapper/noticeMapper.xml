@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.ssafit.model.dao.NoticeDao">
+	<resultMap type="Notice" id="noticeMap">
+		<result column="notice_id" property="noticeId" />
+		<result column="notice_writer" property="writer" />
+		<result column="notice_title" property="title" />
+		<result column="notice_content" property="content" />
+		<result column="notice_viewcount" property="viewCnt" />
+		<result column="notice_reg_date" property="regDate" />
+	</resultMap>
+
+	<select id="selectList" resultMap="noticeMap"
+		parameterType="HashMap">
+		SELECT *
+		FROM notice
+		<if test="mode == 1">
+			WHERE notice_title LIKE CONCAT('%', #{keyword},'%')
+		</if>
+		<if test="mode == 2">
+			WHERE notice_content LIKE '%${keyword}%'
+		</if>
+		<if test="mode == 3">
+			WHERE notice_title LIKE CONCAT('%', #{keyword},'%')
+			OR
+			notice_content LIKE '%${keyword}%'
+		</if>
+	</select>
+
+	<select id="detailNotice" parameterType="int"
+		resultMap="noticeMap">
+		SELECT *
+		FROM notice
+		WHERE notice_id = #{noticeId}
+	</select>
+
+	<insert id="insertNotice" parameterType="Notice"
+		keyProperty="noticeId" useGeneratedKeys="true">
+		INSERT INTO notice (notice_id,
+		notice_title, notice_writer, notice_content)
+		VALUES (#{noticeId}, #{title},
+		#{writer}, #{content})
+	</insert>
+
+	<!-- 조회수 증가 -->
+	<update id="updateViewCnt" parameterType="int">
+		UPDATE notice
+		SET
+		notice_viewcount = notice_viewcount+1
+		WHERE notice_id = #{noticeId}
+	</update>
+
+	<update id="updateNotice" parameterType="Notice">
+		UPDATE notice
+		SET
+		notice_title = #{title}, notice_content = #{content}
+		WHERE notice_id =#{noticeId}
+	</update>
+
+	<delete id="deleteNotice" parameterType="int">
+		DELETE FROM notice WHERE
+		notice_id = #{noticeId}
+	</delete>
+
+</mapper>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.ssafit.model.dao.VideoDao">
+	<resultMap type="Video" id="videoMap">
+		<result column="video_id" property="videoId"/>
+		<result column="video_title" property="videoTitle"/>
+		<result column="youtuber" property="youtuber"/>
+		<result column="exercise_code" property="exerciseCode"/>
+		<result column="exercise_name" property="exerciseName"/>		
+		<result column="video_viewcount" property="viewCnt"/>
+	</resultMap>
+	
+	<select id="selectAll" resultMap="videoMap">
+		SELECT *
+		FROM video v, exercise_part e
+		WHERE v.exercise_code=e.exercise_code;	
+	</select>
+	
+	<select id="selectByPart" parameterType="Integer" resultMap="videoMap">
+		SELECT *
+		FROM video
+		WHERE exercise_code=#{exerciseCode}
+	</select>
+	
+	<select id="detail" parameterType="String" resultMap="videoMap">
+		SELECT *
+		FROM video v, exercise_part e
+		WHERE v.video_id = #{videoId} AND v.exercise_code=e.exercise_code;	
+	</select>
+	
+	<update id="updateViewCnt" parameterType="String">
+		UPDATE video
+		SET video_viewcount = video_viewcount+1
+		WHERE video_id = #{videoId};
+	</update>
+	
+	<update id="deductViewCnt" parameterType="String">
+		UPDATE video
+		SET video_viewcount = video_viewcount-1
+		WHERE video_id = #{videoId};
+	</update>
+	
+	<select id="search" resultMap="videoMap"
+		parameterType="SearchCondition">
+		SELECT *
+		FROM video
+		<if test="key != 'none'">
+			WHERE ${key} like concat('%', #{word}, '%')
+		</if>
+		<if test="orderBy != 'none'">
+			order by ${orderBy} ${orderByDir}
+		</if>
+	</select>
+</mapper>
