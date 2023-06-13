@@ -13,7 +13,7 @@
 
 #ERD
 
-![FinalDB_ERD](/uploads/d26868dec0da65e448e3b8190f6a32c4/FinalDB_ERD.png)
+![FinalDB_ERD](/image/FinalDB_ERD.png)
 
 #Class Diagram
 
