@@ -17,121 +17,121 @@
 
 #Class Diagram
 
-![Class_diagram](/uploads/8b3ccbc01b9dc672e779bb0a4c3554d9/Class_diagram.png)
+![Class_diagram](/Etc/Image/Class_diagram.png)
 
 
 #1. 메인화면, 공지사항 게시글로 이동가능
 
-![image](/uploads/d57a124ac115cb4f6abefe36171b7b71/image.png)
+![image](/Etc/Image/1.png)
 
-![image](/uploads/7102c46d285a3178b072f677475da2e4/image.png)
+![image](/Etc/Image/2.png)
 
 
 #2 비디오 상세보기, 연관 동영상 표시 및 이동 가능
 
-![image](/uploads/34a368151103a2e92694a86bc64e370e/image.png)
+![image](/Etc/Image/3.png)
 
 
 #3. 비디오 찜하기, 비디오 댓글 좋아요 / 싫어요
 
-![image](/uploads/9700ec8aee0930850487e186c3385700/image.png)
+![image](/Etc/Image/4.png)
 
 
 #4. 비디오 댓글 수정 혹은 삭제 => 메세지 출력
 
-![image](/uploads/6c387b825ebf3a47e57c50f942526bc9/image.png)
+![image](/Etc/Image/5.png)
 
 
 #5. 공지사항 게시판, 자유게시판 페이지 => 제목, 내용으로 검색가능
 
-![image](/uploads/8fd91413e6aaf35a4773f14d6cd2b826/image.png)
+![image](/Etc/Image/6.png)
 
-![image](/uploads/9aef4ed1a9537d72c1336821f88a685f/image.png)
+![image](/Etc/Image/7.png)
 
-![image](/uploads/5e7a43c194ce885d3424b84ee6b39473/image.png)
+![image](/Etc/Image/8.png)
 
-![image](/uploads/8f92a1b2a9810429813fbd0a3c31f752/image.png)
+![image](/Etc/Image/9.png)
 
 
 #6. 게시글 상세보기, 댓글 작성 가능 (공지사항의 경우 댓글 x)
 
-![image](/uploads/bc47fc849a0c9156ec10d6060e2051cd/image.png)
+![image](/Etc/Image/10.png)
 
 
 #7. 게시글 작성 및 수정 혹은 삭제 가능(공지사항, 자유게시판 동일) => 안내메세지 출력   
 
-![image](/uploads/d009a5d939cc5a47bfdb373708f48f23/image.png)
+![image](/Etc/Image/11.png)
 
-![image](/uploads/af481514f2666f0b38da74aca2fe53bc/image.png)
+![image](/Etc/Image/12.png)
 
-![image](/uploads/b9ff955319c911b634f1e95be834b966/image.png)
+![image](/Etc/Image/13.png)
 
-![image](/uploads/242d8d5bf2435f6304ed802eb3f980a7/image.png)
+![image](/Etc/Image/14.png)
 
-![image](/uploads/62236d7a0bccd11b60f303d3068ae954/image.png)
+![image](/Etc/Image/15.png)
 
-![image](/uploads/2781ef0ebe37e044f6a57ea1cfbb836e/image.png)
+![image](/Etc/Image/16.png)
 
 
 #8. 댓글 수정 및 삭제 가능 => 안내메세지 출력
 
-![image](/uploads/853299ebd26f2d29bf834e7e60019880/image.png)
+![image](/Etc/Image/17.png)
 
-![image](/uploads/802c0995c99c5d93919a11f214f7ca18/image.png)
+![image](/Etc/Image/18.png)
 
-![image](/uploads/b538cdaae0a381392858bf60db0bb37b/image.png)
+![image](/Etc/Image/19.png)
 
-![image](/uploads/5fec6ed4bb7465bc24290dab9989fda1/image.png)
+![image](/Etc/Image/20.png)
 
 
 #9. 헬스장 찾기 기능
 
-![image](/uploads/425abda3259c955e8af802e39e93a6b9/image.png)
+![image](/Etc/Image/21.png)
 
-![image](/uploads/4a44aa73032649780d29dbbaed7d3baf/image.png)
+![image](/Etc/Image/22.png)
 
 
 #10. 로그인 페이지 => 로그인 완료 메세지 출력
 
-![image](/uploads/ed250e177c6cbda3fc02c38bfb4edafd/image.png)
+![image](/Etc/Image/23.png)
 
-![image](/uploads/b1bed5faa0b017a5124b13add36d150c/image.png)
+![image](/Etc/Image/24.png)
 
 
 #11. 회원가입 페이지 => 랜덤 등록 가능, 안내메세지 출력
 
-![image](/uploads/a50cc760861e46c4c668b59261fbaa34/image.png)
+![image](/Etc/Image/25.png)
 
 
 #12. 마이페이지 찜한 목록 표시 및 비디오 상세보기페이지 이동 가능 / 관리자의 경우 리뷰 관리 가능
 
-![image](/uploads/efee83cbb462bd0fd0a1a0f84e777e51/image.png)
+![image](/Etc/Image/26.png)
 
 
 #13. 사용자 검색 페이지 사용자 검색 및 팔로우 가능 => 팔로우는 로그인 시에만 가능 
 
-![image](/uploads/31b797dd3eb4f4822171d163e2a499be/image.png)
+![image](/Etc/Image/27.png)
 
-![image](/uploads/45a72b8c18e334ded466f3c5d24f1322/image.png)
+![image](/Etc/Image/28.png)
 
-![image](/uploads/cff8b1ab3203a394c5baafcdf3ffa61a/image.png)
+![image](/Etc/Image/29.png)
 
-![image](/uploads/a11d9374c5371bfb6ebfdf10e361d3c4/image.png)
+![image](/Etc/Image/30.png)
 
-![image](/uploads/43b8c17b401d8b094ec10656a706b5ea/image.png)
-![image](/uploads/da8239fb57d427c3216753bc7dd11b65/image.png)
-![image](/uploads/ce6d45567036b9c0872ad78385d270fb/image.png)
+![image](/Etc/Image/31.png)
+![image](/Etc/Image/32.png)
+![image](/Etc/Image/33.png)
 
-![image](/uploads/4b99252619346eee76ca5c6a47eaf0bc/image.png)
+![image](/Etc/Image/34.png)
 
 
 #14. 사용자 검색 페이지 열 기준으로 정렬 가능
 
-![image](/uploads/a7f56ad58e791a5e1ebcba7ddc37f425/image.png)
+![image](/Etc/Image/35.png)
 
-![image](/uploads/f2817191eaeab27c43ed430583988d0c/image.png)
+![image](/Etc/Image/36.png)
 
-![image](/uploads/bede87eadf704057e5557efd42030bae/image.png)
+![image](/Etc/Image/37.png)
 
 
 작업일정
