@@ -13,7 +13,7 @@
 
 #ERD
 
-![FinalDB_ERD](/image/FinalDB_ERD.png)
+![FinalDB_ERD](/etc/image/FinalDB_ERD.png)
 
 #Class Diagram
 
